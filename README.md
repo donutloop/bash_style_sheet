@@ -17,3 +17,15 @@ kill $(lsof -t -i:4568)
 ```bash 
 netstat -nltp
 ```
+
+## Grep error of systemd service 
+
+```bash
+journalctl --no-pager -u {{service_name}} -b | grep "error"
+```
+
+## ssh
+
+```bash
+ssh -i key.pem user@host
+```
