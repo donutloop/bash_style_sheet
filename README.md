@@ -29,3 +29,9 @@ journalctl --no-pager -u {{service_name}} -b | grep "error"
 ```bash
 ssh -i key.pem user@host
 ```
+
+## timestamp for migrations
+
+```bash
+$(date +%Y%m%d%H%M%S)
+```
