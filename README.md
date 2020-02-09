@@ -1,9 +1,16 @@
 # Bash Style Sheet
 
+## Process got killed by linux 
+
+```bash
+dmesg -T| grep -E -i -B100 'killed process'
+```
+
 ## Kill port
 
 ```bash
-kill $(lsof -t -i:4568)
+k
+ill $(lsof -t -i:4568)
 ```
 
 ## Process - report a snapshot of the current processes and grep for a port
